@@ -1,0 +1,38 @@
+.bg {
+  background-image: linear-gradient(180deg, $primary 0%, $deep 100%), url(../images/carousel_background.png), radial-gradient(50% 50% at 50% 50%, #300871 0%, $black 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 1778px;
+  background-position: left top, bottom, bottom;
+
+  @include media-breakpoint-up(sm) {
+    background-size: 100% 3400px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-image: url(../images/home_background.png), url(../images/carousel_background.png), radial-gradient(50% 50% at 50% 50%, #300871 0%, $black 100%);
+    background-size: 100% 640px, 50% 828px, 100% 828px;
+    background-position: left top, left bottom, bottom;
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-size: 100% 880px, 50% 1080px, 100% 1080px;
+  }
+}
+
+.linear {
+  @include bg-linear(90deg, $primary, 1.22%, $deep, 116.05%);
+}
+
+.radial- {
+  &1 {
+    @include bg-radial(#28085C, 0%, $black, 100%);
+  }
+
+  &2 {
+    @include bg-radial($black, 0%, #28085C, 100%);
+  }
+
+  &3 {
+    @include bg-radial(#300871, 0%, $black, 100%);
+  }
+}

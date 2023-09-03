@@ -1,0 +1,11 @@
+.swiper-wrapper {
+  height: 416px;
+}
+
+.swiper-scrollbar {
+  background: rgba($white, 0.2);
+
+  &-drag {
+    background: $white !important;
+  }
+}

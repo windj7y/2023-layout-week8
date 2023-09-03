@@ -1,0 +1,7 @@
+@mixin bg-linear($angle, $start-color, $start-position, $end-color, $end-position)  {
+  background: linear-gradient($angle, $start-color $start-position, $end-color $end-position);
+}
+
+@mixin bg-radial($start-color, $start-position, $end-color, $end-position)  {
+  background: radial-gradient(50% 50% at 50% 50%, $start-color $start-position, $end-color $end-position);
+}

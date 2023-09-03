@@ -1,0 +1,20 @@
+.navbar-collapse {
+  position: absolute;
+  left: 0;
+  top: 64px;
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    top: 0;
+  }
+}
+
+.navbar-nav {
+  background: linear-gradient(180deg, $primary 0%, $deep 100%);
+  border-top: 1px solid $white;
+
+  @include media-breakpoint-up(lg) {
+    background: transparent;
+    border: none;
+  }
+}

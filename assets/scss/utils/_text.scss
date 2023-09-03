@@ -1,0 +1,39 @@
+.font- {
+  &shrikhand {
+    font-family: 'Shrikhand', cursive;
+  }
+
+  &saira {
+    font-family: 'Saira Extra Condensed', sans-serif;
+  }
+}
+
+.decorative-text {
+  font-family: 'Shrikhand', cursive;
+  font-size: 128px;
+  color: rgba($white, 0.04);
+  position: absolute;
+  left: 50%;
+  bottom: -68px;
+  transform: translateX(-50%);
+
+  @include media-breakpoint-up(md) {
+    bottom: -240px;
+    font-size: 400px;
+  }
+}
+
+.text-bg {
+  &::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 12px;
+    background: $light;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+  }
+}

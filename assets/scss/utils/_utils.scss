@@ -1,0 +1,40 @@
+.object- {
+  &cover {
+    object-fit: cover;
+  }
+
+  &position- {
+    &top {
+      object-position: top;
+    }
+  }
+}
+
+.material-symbols-outlined {
+  vertical-align: bottom;
+}
+
+.rotate- {
+  &180 {
+    transform: rotate(180deg);
+  }
+}
+
+.line- {
+  &bottom {
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $white;
+      position: absolute;
+      left: 0;
+      margin-top: 20px;
+
+      @include media-breakpoint-up(md) {
+        margin-top: 16px;
+      }
+    }
+  }
+}

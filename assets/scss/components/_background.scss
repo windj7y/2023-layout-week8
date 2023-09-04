@@ -1,21 +1,26 @@
-.bg {
-  background-image: linear-gradient(180deg, $primary 0%, $deep 100%), url(../images/carousel_background.png), radial-gradient(50% 50% at 50% 50%, #300871 0%, $black 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 1778px;
-  background-position: left top, bottom, bottom;
+.bg- {
+  &home {
+    background-image: linear-gradient(180deg, $primary 0%, $deep 100%);
+    background-repeat: no-repeat;
+    margin-bottom: -104px;
 
-  @include media-breakpoint-up(sm) {
-    background-size: 100% 3400px;
+    @include media-breakpoint-up(lg) {
+      background-image: url(../images/home_background.png);
+      background-size: cover;
+    }
   }
 
-  @include media-breakpoint-up(lg) {
-    background-image: url(../images/home_background.png), url(../images/carousel_background.png), radial-gradient(50% 50% at 50% 50%, #300871 0%, $black 100%);
-    background-size: 100% 640px, 50% 828px, 100% 828px;
-    background-position: left top, left bottom, bottom;
-  }
+  &carousel {
+    background-image: url(../images/mobile/carousel_background_mobile.png), radial-gradient(50% 50% at 50% 50%, #300871 0%, $black 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    padding-top: 104px;
 
-  @include media-breakpoint-up(xl) {
-    background-size: 100% 880px, 50% 1080px, 100% 1080px;
+    @include media-breakpoint-up(md) {
+      background-image: url(../images/carousel_background.png), radial-gradient(50% 50% at 50% 50%, #300871 0%, $black 100%);
+      background-size: 50% 100%, 100%;
+    }
   }
 }
 

@@ -11,6 +11,18 @@
     }
   }
 
+  &gray {
+    &:hover {
+      color: $gray !important;
+    }
+  }
+
+  &svg-gray {
+    &:hover svg {
+      fill: $gray;
+    }
+  }
+
   &shadow {
     &:hover {
       box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.8);
@@ -26,14 +38,6 @@
       @include media-breakpoint-up(lg) {
         background-color: rgba($black, 0.5) !important;
       }
-    }
-  }
-}
-
-.svg-hover- {
-  &gray {
-    &:hover {
-      fill: $gray;
     }
   }
 }
